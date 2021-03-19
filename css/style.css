@@ -54,7 +54,7 @@ form {
   width: 90%;
   border: none;
   border-bottom: 1px solid #89878741;
-  padding: 1.7rem .5rem 0.5rem 2.7rem;
+  padding: 1.7rem 0.5rem 0.5rem 2.7rem;
   outline: none;
   overflow: hidden;
 }
@@ -69,7 +69,6 @@ form {
   font-size: 1.2rem;
   font-style: italic;
   background-color: #fff;
-
 }
 
 input::placeholder {
@@ -103,6 +102,13 @@ button {
   text-decoration: underline;
   color: #19aa8d;
 }
+
+.sms {
+  text-align: left;
+  color: red;
+  display: none;
+}
+
 @media screen and (min-width: 459.99px) {
   .content {
     width: 70%;
