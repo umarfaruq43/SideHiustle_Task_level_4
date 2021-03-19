@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="content">
-      <form action="" method="POST">
+      <form action="" method="POST" name="account">
         <div class="form_content">
           <h1>Create Account</h1>
           <p class="text">It is free and hardly takes more than 30 seconds.</p>
@@ -77,19 +77,24 @@
     </div>
     <script>
       const getButton = document.querySelector(".check");
-      const getvalue = document.querySelector("#password");
+      const getPassword = document.querySelector("#password");
+      const cPassword
       getButton.addEventListener("click", see);
 
       function see() {
-        console.log(getvalue.type);
+        console.log(getPassword.type);
 
-        if (getvalue.type === "password") {
-          getvalue.type = "text";
+        if (getPassword.type === "password") {
+          getPassword.type = "text";
           getButton.innerHTML = "Hide";
         } else {
-          getvalue.type = "password";
+          getPassword.type = "password";
           getButton.innerHTML = "Show";
         }
+      }
+
+      const handleSubmit = (e) =>{
+        if(getPassword === )
       }
     </script>
   </body>
