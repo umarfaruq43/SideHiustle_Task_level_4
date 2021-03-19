@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/20bdf30e52.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="content">
+      <form action="" method="POST">
+        <div class="form_content">
+          <h1>Create Account</h1>
+          <p class="text">It is free and hardly takes more than 30 seconds.</p>
+
+          <p class="form_group">
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username"
+              required
+            />
+          </p>
+
+          <p class="form_group">
+            <i class="fab fa-telegram-plane"></i>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+          </p>
+
+          <p class="form_group">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+              placeholder="Password"
+              required
+            />
+          </p>
+
+          <p class="form_group">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Confirm Password"
+              required
+            />
+          </p>
+
+          <p class="form_group">
+            <button>Sign Up</button>
+          </p>
+          <p class="info">
+            By clicking the sign Up button, you agree to our
+            <a href="#"> Terms and condition </a>, and
+            <a href="#">Privacy Policy.</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <script></script>
+  </body>
+</html>
