@@ -50,6 +50,7 @@
               placeholder="Password"
               required
             />
+            <span class="check">Show</span>
           </p>
 
           <p class="form_group">
@@ -57,7 +58,7 @@
             <input
               type="password"
               name="password"
-              id="password"
+              id="Cpassword"
               placeholder="Confirm Password"
               required
             />
@@ -74,6 +75,22 @@
         </div>
       </form>
     </div>
-    <script></script>
+    <script>
+      const getButton = document.querySelector(".check");
+      const getvalue = document.querySelector("#password");
+      getButton.addEventListener("click", see);
+
+      function see() {
+        console.log(getvalue.type);
+
+        if (getvalue.type === "password") {
+          getvalue.type = "text";
+          getButton.innerHTML = "Hide";
+        } else {
+          getvalue.type = "password";
+          getButton.innerHTML = "Show";
+        }
+      }
+    </script>
   </body>
 </html>

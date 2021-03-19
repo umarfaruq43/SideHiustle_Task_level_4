@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+*/
+
 html {
   font-size: 10px;
-}
+} 
 
 body {
   margin: 0;
@@ -53,6 +55,17 @@ form {
   border-bottom: 1px solid #89878741;
   padding: 1.7rem 0 0.5rem 3.5rem;
   outline: none;
+}
+.check {
+  position: absolute;
+  color: red;
+  cursor: pointer;
+  display: inline;
+  z-index: 100;
+  right: 2rem;
+  bottom: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
 input::placeholder {
