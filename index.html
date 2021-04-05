@@ -19,20 +19,6 @@
           <p class="text">It is free and hardly takes more than 30 seconds.</p>
 
           <p class="form_group">
-            <i class="fas fa-user"></i>
-            <input
-              type="text"
-              name="username"
-              id="username"
-              placeholder="Username"
-            />
-          </p>
-          <p class="sms" id="usernameSms">
-            <i class="fas fa-exclamation-circle"></i> Username must be filled
-            out.
-          </p>
-
-          <p class="form_group">
             <i class="fab fa-telegram-plane"></i>
             <input
               type="email"
@@ -40,9 +26,6 @@
               id="email"
               placeholder="Email Address"
             />
-          </p>
-          <p class="sms" id="emailSms">
-            <i class="fas fa-exclamation-circle"></i> Email Address is required.
           </p>
 
           <p class="form_group">
@@ -52,32 +35,12 @@
               name="password"
               id="password"
               placeholder="Password"
-        minlenght="8"
-/>
+            />
             <span class="check"> Show</span>
           </p>
-          <p class="sms">
-            <i class="fas fa-exclamation-circle"></i> Password is required.
-          </p>
 
-          <p class="form_group">
-            <i class="fas fa-lock"></i>
-            <input
-              type="password"
-              name="Cpassword"
-              id="Cpassword"
-              placeholder="Confirm Password"
-            />
-          </p>
-
-          <p class="sms">
-            <i class="fas fa-exclamation-circle"></i> Password does not
-            correspond.
-          </p>
-
-          <p class="form_group">
-            <button type="submit" id="button">Sign Up</button>
-          </p>
+          <button type="submit">Sign in</button>
+          <p></p>
           <p class="info">
             By clicking the sign Up button, you agree to our
             <a href="#"> Terms and condition </a>, and
@@ -86,32 +49,31 @@
         </div>
       </form>
     </div>
+    <div class="modal">
+      <p>
+        <span class="close">X</span>
+      </p>
+      <h1 class="sms">Incorrect Password</h1>
+      <div class="subline">
+        <p class="line"></p>
+      </div>
+    </div>
+
     <script>
-      const getForm = document.querySelector(".form");
-      const getCheck = document.querySelector(".check");
+      const getForm = document.querySelector("#form");
       const getPassword = document.querySelector("#password");
-      const cPassword = document.querySelector("#Cpassword");
-      const getUsername = document.querySelector("#username");
-      const getemail = document.querySelector("#email");
+      const getEmail = document.querySelector("#email");
       const getButton = document.querySelector("#button");
-      // const allInput = document.querySelectorAll("input");
-      const getSms = document.querySelectorAll(".sms");
-
-      // getButton.addEventListener("click", (e) => {
-      //   e.preventDefault();
-
-      //   allInput.forEach((element) => {
-      //     // if ((element.value = "")) {
-      //     //   console.log;("value is needed");
-      //     // }
-
-      //     if (element.value === "") {
-      //       getSms.style.display = block;
-      //     }
-      //   });
-      // });
+      const closeModal = document.querySelector(".close");
+      const getModal = document.querySelector(".modal");
+      const getCheck = document.querySelector(".check");
+      const getLine = document.querySelector(".line");
+      const errSms = document.querySelector('.sms')
+      const user = {
+        email: "abdulazeezfaruq43@gmail.com",
+        password: 12345,
+      };
     </script>
-
     <script src="passworrdToggler.js"></script>
     <script src="formValidation.js"></script>
   </body>
